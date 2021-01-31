@@ -5,7 +5,7 @@ const { prefix } = request('./config.json')
 /*
     ['ping', 'test']
 
-    'ping'
+    'ping' -> ['ping']
 */
 
 
@@ -17,5 +17,13 @@ module.exports = (client, aliases, callback) => {
 
     client.on('message', message => {
         const { content } = message;
+
+        aliases.forEach(alias => {
+
+            const command = `${prefix}${alias}`
+
+            // ping
+
+        })
     })
 }
