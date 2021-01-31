@@ -8,7 +8,6 @@ const { prefix } = request('./config.json')
     'ping' -> ['ping']
 */
 
-
 module.exports = (client, aliases, callback) => {
     
     if(typeof aliases === 'string') {
@@ -23,6 +22,13 @@ module.exports = (client, aliases, callback) => {
             const command = `${prefix}${alias}`
 
             // ping
+            // test
+            // testing
+
+            if(content.startswith('$(command}') || content = command) {
+
+                console.log(`Running the Command ${command}`)
+            }
 
         })
     })
