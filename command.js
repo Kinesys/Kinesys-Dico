@@ -21,9 +21,11 @@ module.exports = (client, aliases, callback) => {
 
             const command = `${prefix}${alias}`
 
-            // ping
-            // test
-            // testing
+        /*
+             ping
+             test
+             testing
+        */
 
             if(content.startswith('$(command}') || content = command) {
 
