@@ -33,6 +33,15 @@ client.on('ready', () => {
         })
     })
 
+    command(client, ['cc', 'clear', 'clearchannel'], (message) => {
+        if (message.member.hasPermission('ADMINISTRATOR')) {
+            message.channel.messages.fetch().then((results) => {
+                console.log(results)
+                message.channel.bulkDelete(results)
+            })
+        }
+    })
+
 })
 
 client.login(config.token)
