@@ -14,11 +14,11 @@ client.on('ready', () => {
     })
 
     command(client, 'name', message => {
-        message.channel.send("My name is Oracle, Discord Bot.")
+        message.channel.send("My name is Nemeisys, Discord Bot.")
     })
 
     command(client, 'name -k', message => {
-        message.channel.send("제 이름은 오라클, 디스코드 봇 입니다.")
+        message.channel.send("제 이름은 네메시스, 디스코드 봇 입니다.")
     })
 
 })
