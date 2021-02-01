@@ -1,6 +1,6 @@
 //command handler js_code
 
-const { prefix } = request('./config.json')
+const { prefix } = require('./config.json')
 
 /*
     ['ping', 'test']
@@ -27,9 +27,10 @@ module.exports = (client, aliases, callback) => {
              testing
         */
 
-            if(content.startswith('$(command}') || content === command) {
+            if(content.startsWith('$(command}') || content === command) {
 
                 console.log(`Running the Command ${command}`)
+                callback(message)
             }
 
         })
