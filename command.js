@@ -27,7 +27,7 @@ module.exports = (client, aliases, callback) => {
              testing
         */
 
-            if(content.startswith('$(command}') || content = command) {
+            if(content.startswith('$(command}') || content === command) {
 
                 console.log(`Running the Command ${command}`)
             }
