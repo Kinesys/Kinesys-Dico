@@ -9,9 +9,18 @@ const command = require('./command')
 client.on('ready', () => {
     console.log("The Client is Ready")
 
-    command(client, 'ping', message => {
-        message.channel.send('Pong!')
+    command(client, 'hi', message => {
+        message.channel.send('Hi Kinesys Server!')
     })
+
+    command(client, 'name', message => {
+        message.channel.send("My name is Oracle, Discord Bot.")
+    })
+
+    command(client, 'name -k', message => {
+        message.channel.send("제 이름은 오라클, 디스코드 봇 입니다.")
+    })
+
 })
 
 client.login(config.token)
