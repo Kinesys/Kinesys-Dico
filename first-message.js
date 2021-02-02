@@ -22,7 +22,12 @@ module.exports = async(client, id, text, reactions = []) => {
             })
 
         } else {
-            //Edit the existing message(기존 메세지 수정)
+            //Edit the existing message(기존 메세지 수정)(해당 코드로 인하여 first-message 수정시 index.js에서 수정하면 됨)
+            for (const message of messages) {
+                console.log(message)
+                message[1].edit(text)
+                addReactions(message[1], reactions)
+            }
         }
     })
 }
