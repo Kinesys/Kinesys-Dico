@@ -33,10 +33,10 @@ client.on('ready', () => {
         })
     })
 
-    command(client, 'status', (message) => {
-        const content = message.content.replace('//status', '')
+    command(client, 'Server', (message) => {
+        const content = message.content.replace('!status', '')
 
-        // //status hello world => "hello world"
+        // "!status hello world" => "hello world"
 
         client.user.setPresence({
             activity: {
