@@ -9,8 +9,8 @@ const { prefix } = require('./config.json')
 */
 
 module.exports = (client, aliases, callback) => {
-    
-    if(typeof aliases === 'string') {
+
+    if (typeof aliases === 'string') {
         aliases = [aliases]
     }
 
@@ -21,13 +21,13 @@ module.exports = (client, aliases, callback) => {
 
             const command = `${prefix}${alias}`
 
-        /*
-             ping
-             test
-             testing
-        */
+            /*
+                 ping
+                 test
+                 testing
+            */
 
-            if(content.startsWith('$(command}') || content === command) {
+            if (content.startsWith('$(command}') || content === command) {
 
                 console.log(`Running the Command ${command}`)
                 callback(message)

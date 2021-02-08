@@ -38,7 +38,6 @@ client.on('ready', () => {
         })
     })
 
-
     command(client, 'Server', (message) => { //봇 상태 지정
         const content = message.content.replace('//status', '')
 
@@ -53,13 +52,16 @@ client.on('ready', () => {
 
     })
 
+
+
+
+
     //message 반응(react) 
-    firstMessage(client, '', 'Welcome to My Server\n 여기는 Kinesys의 Private Server입니다.\n 하지만 몇 가지의 규정이 존재하므로\n 반드시 공지 채널의 공지를 읽어주세요.\n 확인 후에는 밑의 아이콘을 눌러주세요.', ['🔥'])
+    firstMessage(client, '806283936489144410', 'Welcome to My Server\n 여기는 Kinesys의 Private Server입니다.\n 하지만 몇 가지의 규정이 존재하므로\n 반드시 공지 채널의 공지를 읽어주세요.\n 확인 후에는 밑의 아이콘을 눌러주세요.', ['🔥'])
 
     //private message
     privateMessage(client, '//bot', 'Bot을 호출하였습니다.')
 })
-
 
 
 client.login(config.token)

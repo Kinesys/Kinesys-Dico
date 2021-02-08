@@ -11,6 +11,5 @@
   "dependencies": {
     "discord.js": "^12.5.1"
   },
-  "devDependencies": {},
   "description": ""
 }
